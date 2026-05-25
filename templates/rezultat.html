@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sr"><head><meta charset="UTF-8">
+<style>
+    body{background:#000;color:#fff;text-align:center;padding:50px;font-family:'Cinzel';}
+    .box{border:2px solid #c5a059;padding:40px;max-width:600px;margin:auto;}
+    .btn{background:#c5a059;padding:20px;border:none;font-weight:bold;cursor:pointer;margin-top:20px;}
+    #modal{display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#111;padding:40px;border:2px solid #c5a059;}
+</style></head><body>
+<div class="box">
+    <h1>ANALIZA ZA {{ ime }}</h1>
+    <p>Znak: <b>{{ znak }}</b></p>
+    <p style="text-align:left; color:#ccc;">{{ analiza }}</p>
+    <button class="btn" onclick="document.getElementById('modal').style.display='block'">NARUČI ANALIZU (20 EUR)</button>
+</div>
+<div id="modal">
+    <h2>Kontaktirajte nas</h2>
+    <p>Pošaljite mejl na: <b>nebeskikod1@gmail.com</b></p>
+    <p>Naslov: <i>Aktivacija vektora - {{ ime }}</i></p>
+    <button onclick="document.getElementById('modal').style.display='none'">ZATVORI</button>
+</div>
+</body></html>

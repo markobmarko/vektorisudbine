@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sr"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+    :root { --gold: #d4af37; --dark: #0a0a0a; }
+    body { background: var(--dark); color: #fff; font-family: 'Montserrat', sans-serif; margin: 0; scroll-behavior: smooth; }
+    
+    /* Navigacija */
+    nav { position: fixed; top: 0; width: 100%; padding: 20px 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(10px); text-align: center; border-bottom: 1px solid #333; z-index: 1000; }
+    nav a { color: #aaa; text-decoration: none; margin: 0 20px; font-weight: 300; font-size: 0.8em; letter-spacing: 2px; transition: 0.3s; }
+    nav a:hover { color: var(--gold); }
+
+    /* Sekcije */
+    .section { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 20px; }
+    h1, h2 { font-family: 'Playfair Display', serif; color: var(--gold); }
+    
+    /* Forma - Premium Look */
+    .form-container { background: #151515; padding: 50px; border: 1px solid #333; border-radius: 10px; width: 100%; max-width: 500px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); }
+    input { width: 100%; background: #1a1a1a; border: none; border-bottom: 1px solid #444; color: #fff; padding: 15px 0; margin: 10px 0; outline: none; }
+    input:focus { border-bottom: 1px solid var(--gold); }
+    button { width: 100%; background: transparent; border: 1px solid var(--gold); color: var(--gold); padding: 15px; cursor: pointer; transition: 0.4s; margin-top: 20px; }
+    button:hover { background: var(--gold); color: #000; }
+</style></head><body>
+
+<nav>
+    <a href="#home">HOME</a><a href="#o-nama">O NAMA</a><a href="#analiza">ANALIZA</a><a href="#kontakt">KONTAKT</a>
+</nav>
+
+<div id="home" class="section">
+    <h1 style="font-size: 4em;">VEKTORI SUDBINE</h1>
+    <p>Otkrijte nevidljive kodove vašeg postojanja.</p>
+</div>
+
+<div id="o-nama" class="section">
+    <h2>ISKUSTVO I AUTORITET</h2>
+    <p style="max-width: 600px; text-align: center; line-height: 1.8;">Više od dve decenije posvećeni smo analizi karmičkih ciklusa. Naš pristup kombinuje drevnu mudrost sa preciznim metodama proračuna. Rezultat? Jasna vizija vašeg životnog puta u 2026. godini.</p>
+</div>
+
+<div id="analiza" class="section">
+    <div class="form-container">
+        <h2 style="text-align: center;">BRZA ANALIZA</h2>
+        <form action="/" method="POST">
+            <input type="text" name="ime" placeholder="Ime i prezime" required>
+            <div style="display:flex; gap:10px;"><input type="number" name="m_rodj" placeholder="MM" required><input type="number" name="d_rodj" placeholder="DD" required><input type="number" name="g_rodj" placeholder="GGGG" required></div>
+            <input type="text" name="ime_otac" placeholder="Ime oca"><input type="number" name="g_otac" placeholder="Godina rođenja oca">
+            <input type="text" name="ime_majka" placeholder="Ime majke"><input type="number" name="g_majka" placeholder="Godina rođenja majke">
+            <button type="submit">OTKRIJ VEKTOR</button>
+        </form>
+    </div>
+</div>
+
+<div id="kontakt" class="section">
+    <h2>KONTAKT</h2>
+    <p>Premium izveštaji i konsultacije:</p>
+    <h3 style="color: var(--gold);">nebeskikod1@gmail.com</h3>
+</div>
+
+</body></html>
